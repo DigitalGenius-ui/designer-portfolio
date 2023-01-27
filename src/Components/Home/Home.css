@@ -1,0 +1,59 @@
+.banner {
+    width: 100%;
+    height: 750px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("../../images/new-banner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.contents {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    color: #fff;
+    font-size: 5rem;
+    padding: 1rem 0;
+}
+
+.website {
+    border: 2px solid rgba(128, 128, 128, 0.731);
+    box-shadow: -6px 6px 6px -3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -6px 6px 6px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -6px 6px 6px -3px rgba(0, 0, 0, 0.75);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #fff;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    z-index: 10000;
+}
+
+
+.btn {
+    padding: 0.6rem 2rem;
+    background-color: rgb(239, 17, 17);
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 1.5rem;
+    transition: background-color 400ms ease-in-out;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 1px 1px rgb(239, 17, 17);
+    background-color: transparent;
+}
+
+@media(max-width : 900px) {
+    .contents {
+        width: 90%;
+    }
+}

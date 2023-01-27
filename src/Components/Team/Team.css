@@ -1,0 +1,79 @@
+.team {
+    background: linear-gradient(rgba(26, 26, 37), rgba(26, 26, 37));
+    padding: 0 3rem 7rem 3rem;
+    display: flex;
+    gap: 5rem;
+}
+
+.team .left,
+.right {
+    flex: 1;
+}
+
+.team .head {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    padding-bottom: 1.5rem;
+    line-height: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.team .right {
+    text-align: right;
+}
+
+.right p {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+    line-height: 1.7rem;
+    font-size: 0.9rem;
+}
+
+/* left side  */
+.left .team_members {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.team_members .team_member {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.left .team_member img {
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.team_member .name,
+.position {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.team_member .detail {
+    font-size: 0.8rem;
+    padding-top: 0.2rem;
+    font-weight: 300;
+}
+
+@media(max-width : 794px) {
+    .team {
+        padding: 0 1rem 7rem 1rem;
+    }
+}
+
+@media(max-width : 724px) {
+    .team {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}

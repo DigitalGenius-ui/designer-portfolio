@@ -7,3 +7,11 @@
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
 }
+
+body {
+  background-image: url("./images/body-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}

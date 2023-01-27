@@ -1,0 +1,52 @@
+.website .container {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(26, 26, 37, 0.031), rgba(26, 26, 37));
+    padding-bottom: 6rem;
+}
+
+.container .texts,
+.empty {
+    flex: 1;
+}
+
+.container .empty {
+    flex: 1.8;
+}
+
+.texts {
+    text-align: center;
+    padding: 5rem 3rem 3rem 3rem;
+}
+
+.texts h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 3.3rem;
+    line-height: 2.7rem;
+    padding-bottom: 0.5rem;
+}
+
+.texts .tage {
+    font-family: 'Satisfy', cursive;
+    text-transform: capitalize;
+}
+
+.texts .desc {
+    text-align: justify;
+    padding-top: 1.5rem;
+}
+
+.texts .desc::first-letter {
+    font-size: 1.6rem;
+}
+
+@media(max-width : 500px) {
+    .website .container {
+        flex-direction: column;
+    }
+
+    .texts {
+        padding: 5rem 1rem 3rem 1rem;
+    }
+}

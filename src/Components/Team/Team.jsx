@@ -3,7 +3,7 @@ import "./Team.css";
 import team1 from "../../images/team/team1.jpg";
 import team2 from "../../images/team/team2.jpg";
 import team3 from "../../images/team/team3.jpg";
-import { Fade, Zoom } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const Team = () => {
   const teamMembers = [

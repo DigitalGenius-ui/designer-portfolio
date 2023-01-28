@@ -3,7 +3,7 @@ import "./Team.css";
 import team1 from "../../images/team/team1.jpg";
 import team2 from "../../images/team/team2.jpg";
 import team3 from "../../images/team/team3.jpg";
-import { Fade, Zoom } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const Team = () => {
   const teamMembers = [
@@ -60,8 +60,8 @@ const Team = () => {
         </Fade>
         <div className="team_members">
           {teamMembers.map((member, i) => (
-            <Fade direction="right">
-              <div className="team_member" key={i}>
+            <Fade direction="right" key={i}>
+              <div className="team_member">
                 <img src={member.image} alt="teamMember" />
                 <div className="text">
                   <h1 className="name">{member.fullName}</h1>

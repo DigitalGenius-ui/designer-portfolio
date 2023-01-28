@@ -5,6 +5,7 @@ import { FaPinterestP } from "react-icons/fa";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaTimes, FaBars } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const [selectNav, setSelectNav] = useState("/");
@@ -55,7 +56,12 @@ const Header = () => {
           <span className="close" onClick={() => setOpenBar(false)}>
             <FaTimes />
           </span>
-          <div className="links">
+          <motion.div
+            className="links"
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
             {nav.map((link, i) => (
               <span
                 key={i}
@@ -65,14 +71,19 @@ const Header = () => {
                 {link.title}
               </span>
             ))}
-          </div>
-          <div className="icons">
+          </motion.div>
+          <motion.div
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="icons"
+          >
             {icons.map((icon, i) => (
               <span key={i}>
                 <a href={icon.path}>{<icon.icon />}</a>
               </span>
             ))}
-          </div>
+          </motion.div>
         </nav>
         <div className="bar">
           <span onClick={() => setOpenBar(true)}>

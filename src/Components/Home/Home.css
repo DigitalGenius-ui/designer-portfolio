@@ -13,6 +13,7 @@
 .contents {
     width: 80%;
     margin: 0 auto;
+    position: relative;
 }
 
 .title {
@@ -21,6 +22,7 @@
     color: #fff;
     font-size: 5rem;
     padding: 1rem 0;
+    z-index: -1
 }
 
 .website {
@@ -33,7 +35,6 @@
     color: #fff;
     margin-bottom: 2rem;
     overflow: hidden;
-    z-index: 10000;
 }
 
 

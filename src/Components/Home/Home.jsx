@@ -12,17 +12,12 @@ const Home = () => {
     <div>
       <div className="banner"></div>
       <div className="contents">
-        <motion.div
-          initial={{ y: -30, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-        >
-          <Header />
-        </motion.div>
+        <Header />
 
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          initial={{ opacity: 0, zIndex: 1 }}
+          animate={{ opacity: 1, zIndex: -1 }}
+          exit={{ opacity: 0 }}
           transition={{ duration: 0.8, delay: 1 }}
         >
           <h1 className="title">Fashion</h1>

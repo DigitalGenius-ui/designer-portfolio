@@ -58,6 +58,10 @@
 }
 
 @media(max-width : 610px) {
+    .header{
+        position: relative;
+    }
+    
     .header nav {
         flex-direction: column-reverse;
         justify-content: center;
@@ -65,11 +69,11 @@
         position: fixed;
         inset: 0;
         background-color: rgba(26, 26, 37);
-        z-index: 10000;
         transform: translateX(50rem);
         transition: transform 400ms ease-in-out;
+        z-index: 9999999;
     }
-
+    
     .header nav.active {
         transform: translateX(0);
     }

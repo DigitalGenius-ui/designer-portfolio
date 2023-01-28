@@ -65,7 +65,7 @@
         position: fixed;
         inset: 0;
         background-color: rgba(26, 26, 37);
-        z-index: 10000;
+        z-index: 1000000;
         transform: translateX(50rem);
         transition: transform 400ms ease-in-out;
     }

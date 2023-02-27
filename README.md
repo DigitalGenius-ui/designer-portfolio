@@ -15,7 +15,7 @@
 - Responsive
 - Fade-In
 - Filter Projects
-- Form
+- Form Validation
 
 ## Description
 

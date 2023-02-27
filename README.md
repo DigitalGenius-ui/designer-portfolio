@@ -1,5 +1,5 @@
 
-## Portfolio for Designers React Portfolio Tutorial 2023
+## Portfolio for Designers Tutorial 2023
 
 <img src="https://res.cloudinary.com/ghazni/image/upload/v1677480228/White_Green_Modern_Bold_Guide_to_Web_3.0_Youtube_Thumbnail_10_lupjug.png" alt="banner"/>
 

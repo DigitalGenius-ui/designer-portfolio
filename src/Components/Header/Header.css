@@ -69,10 +69,7 @@
         position: fixed;
         inset: 0;
         background-color: rgba(26, 26, 37);
-<<<<<<< HEAD
-=======
         z-index: 1000000;
->>>>>>> d9e3d3fa74cd13194fc9bfba8ae0517cfbeb8f8d
         transform: translateX(50rem);
         transition: transform 400ms ease-in-out;
         z-index: 9999999;
